@@ -14,7 +14,16 @@
     --contentText:#2D2D2D;
     --headerText:#757575;
     --highligth: #A445ED;
+    --divider: #E9E9E9;
     --font-primary: 'Sans-serif';
     --font-secondary: 'Serif';
     --font-tertiary:'Mono'
+}
+
+body{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    
+   
 }
