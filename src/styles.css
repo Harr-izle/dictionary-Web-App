@@ -9,7 +9,6 @@
 
 :root{
     --ligthMode:#FFFFFF;
-    --darkmode:#050505;
     --search:#F4F4F4;
     --contentText:#2D2D2D;
     --headerText:#757575;
@@ -20,10 +19,16 @@
     --font-tertiary:'Mono'
 }
 
+/* darkTheme */
+.darkTheme{
+    background-color:#050505;
+    --search:#CDCDCD;
+    --darkmodeText: #FFFFFF;
+}
+
 body{
     /* height: 100vh; */
     display: flex;
     justify-content: center;
-    
    
 }
