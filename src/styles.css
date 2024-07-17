@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --ligthMode:#FFFFFF;
+    --darkmode:#050505;
+    --search:#F4F4F4;
+    --contentText:#2D2D2D;
+    --headerText:#757575;
+    --highligth: #A445ED;
+    --font-primary: 'Sans-serif';
+    --font-secondary: 'Serif';
+    --font-tertiary:'Mono'
+}
