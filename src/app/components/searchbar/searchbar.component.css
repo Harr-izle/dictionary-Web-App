@@ -1,0 +1,35 @@
+
+.searchbar {
+    background-color: var(--search);
+    width: 46.063rem;
+    height: 4rem;
+    margin-top: 3.219rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    border: none;
+  }
+  
+  .searchbar input {
+    width: 70%;
+    height: 4rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold; 
+    color: var(--contentText);
+
+    
+  }
+  .searchbar p{
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .content{
+    width: 46.063rem;
+    margin-top:2.813rem ;
+  }

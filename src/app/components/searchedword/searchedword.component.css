@@ -1,0 +1,140 @@
+
+#searched-word{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.813rem;
+  }
+
+  #searched-word:hover  g circle {
+    cursor: pointer;
+    fill: #8F19E8;
+    opacity: 1;
+    transition: 0.1s ease-in;
+  }
+  #searched-word:hover g path  {
+    cursor: pointer;
+    fill: #FFFFFF;
+    transition: 0.2s ease-in;
+  }
+  #searched-word h5{
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--contentText);
+  }
+
+   #searched-word p{
+    color: var(--highligth);
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  #word-description{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    gap: 1rem;
+  }
+
+  #word-description p{
+    font-size: 1.5rem;
+    color: var(--contentText);
+    font-weight: bold;
+    font-style: italic;
+  }
+  #word-description span{
+    width: 100%;
+    height:0.063rem ;
+    background-color: var(--divider);
+  }
+
+  .word-definition{
+    margin-top: 2.5rem;
+  }
+  .word-definition p{
+    font-size: 1.25rem;
+    color: var(--headerText);  
+  }
+  .word-definition ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: none;
+    margin-left: 1.5rem;
+  }
+
+  .word-definition ul  li{
+      font-size: 1.125rem;
+      color: var(--contentText);
+      
+  }
+  .word-definition ul li::before{
+    content: ".";
+    color: var(--highligth);
+    font-size: 2rem;
+  }
+
+  #synonyms{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.375rem;
+  }
+  #synonyms p{
+    font-size: 1.25rem;
+    color: var(--headerText);
+  }
+  #synonyms h6{
+    font-size: 1.25rem;
+    color: var(--highligth);
+  }
+  #synonyms h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .verb-description{
+    margin-top: 2.5rem;
+    height: 11.188rem;
+    
+  }
+  .source{
+    margin-top: 2.5rem;
+    height: 37px;
+    
+  }
+
+  .source span{
+    width: 100%;
+    height:0.063rem ;
+    display: inline-block;
+    background-color: var(--divider);
+  }
+
+  #words{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 0.5rem;
+  }
+  #words p{
+    color: var(--headerText);
+    font-size:0.875rem ;
+  }
+
+  #words h6{
+    color: var(--contentText);
+    font-size:0.875rem ;
+  }
+  .new-window{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.463rem;
+  }
+
+

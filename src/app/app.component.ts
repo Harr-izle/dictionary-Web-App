@@ -1,27 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { SearchedwordComponent } from "./components/searchedword/searchedword.component";
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NavbarComponent, SearchedwordComponent, SearchbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'dictionary-web-app';
-
-  darkTheme = false;
-  toggleTheme() {
-    console.log("hey");
-    this.darkTheme = !this.darkTheme;
-    if (this.darkTheme) {
-      document.body.classList.add('darkTheme');
-    } else {
-      document.body.classList.remove('darkTheme');
-    }
-  }
-  
-
 
 }

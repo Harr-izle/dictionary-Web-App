@@ -1,0 +1,51 @@
+nav{
+    height:2.313rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 3.625rem;  
+}
+#rigth{
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+}
+
+.font{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-font{
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--contentText); 
+}
+
+.btn-font svg{
+  padding-left: 0.2rem;
+}
+
+
+.switch-moon{
+   display: flex;
+   align-items: center;
+   gap: 1rem
+}
+.switch-moon:hover rect{
+    cursor: pointer;
+    fill: var(--highligth);
+    transition: 0.2s ease-in;
+}
+.switch-moon::before{
+    content: "";
+    width: 0.063rem;
+    height: 2rem;
+    display: inline-block;
+    background-color: var(--divider);
+   
+  }

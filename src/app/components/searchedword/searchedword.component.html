@@ -1,0 +1,57 @@
+
+ <!-- contents -->
+ <div class="content">
+    <div id="searched-word">
+            <!-- <span>😕</span>    -->
+     @if ( dataService.responseData.word.length > 0 ){
+      <div>
+        <h5>{{dataService.responseData.word}}</h5>
+        <p>{{dataService.responseData.phonetic}}</p>
+       </div>
+          <div>
+            <svg (click)="play.play()" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75"><g fill="#A445ED" fill-rule="evenodd"><circle cx="37.5" cy="37.5" r="37.5" opacity=".25"/><path d="M29 27v21l21-10.5z"/></g></svg>
+             <audio #play [src]="dataService.responseData.phonetics[0].audio"></audio>
+           </div>
+     }
+     
+    </div>
+    
+<!-- whether a noun or adjective -->
+@if(dataService.responseData.word.length > 0 ){
+  @for(meaning of dataService.responseData.meanings; track meaning){
+    <div id="word-description">
+      <p>{{meaning.partOfSpeech}}</p>
+      <span></span>
+    </div>
+
+    <!-- word definition -->
+     <div class="word-definition">
+      <p>Meaning</p>
+      <ul>
+       @for(meaning of meaning.definitions; track meaning){
+        <li>{{meaning.definition}}</li>
+       }
+      </ul>
+     </div>
+     <!-- synonyms -->
+      <div id="synonyms">
+        <p>Synonyms</p>
+        <h6>{{meaning.synonyms}}</h6>
+      </div>
+   }
+}
+      <div class="source">
+        
+        <div id="words">   
+         
+          @if(dataService.responseData.word.length > 0 && dataService.responseData.sourceUrls && dataService.responseData.sourceUrls.length > 0){
+            <span></span>
+          <p>source</p>
+          <div class="new-window">
+            <a>https://en.wiktionary.org/wiki/keyboard</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.09 3.545H2.456A1.455 1.455 0 0 0 1 5v6.545A1.455 1.455 0 0 0 2.455 13H9a1.455 1.455 0 0 0 1.455-1.455V7.91m-5.091.727 7.272-7.272m0 0H9m3.636 0V5"/></svg>
+           </div>
+         }
+        </div>
+      </div>
+   </div>
