@@ -14,11 +14,13 @@ export class DataServiceService {
     audio: ''
   }
   searchedWords: string =""
+  error: string = ""
 
 
   constructor(private apiService: ApiServiceService) { }
 
 getHttps(){
+  this.error = "";
   this.apiService.getHttp(this.searchedWords).subscribe(response => {
     this.responseData = response[0];
  
@@ -31,7 +33,8 @@ getHttps(){
       console.log(this.responseData);
       
   }, error => {
-    console.error('Error fetching data:', error);
+    this.error = 'No Definitions Found'; 
+    this.responseData = { word: '', phonetics: [], meanings: [], sourceUrls: [], audio: '' };
   });
 }
 

@@ -13,6 +13,7 @@
     --contentText:#2D2D2D;
     --headerText:#757575;
     --highligth: #A445ED;
+    --notfound:#757575;
     --divider: #E9E9E9;
     --font-primary: "Inter", sans-serif;
     --font-secondary: "Lora", serif;
@@ -27,6 +28,8 @@
     --contentText:#FFFFFF;
     --search:#1F1F1F;
     --divider:#3A3A3A;
+    --notfound:#757575;
+    
 }
 
 html,body{

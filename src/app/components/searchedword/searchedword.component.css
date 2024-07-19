@@ -1,4 +1,27 @@
 
+.notfound-error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  
+}
+
+.notfound-error span{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+ .notfound-error h6{
+  font-size: 1.25rem;
+  color: var(--contentText)
+}
+.notfound-error p{
+  font-size: 1.125rem;
+  color: var(--notfound);
+  text-align: center;
+}
+
+
 #searched-word{
     display: flex;
     flex-direction: row;
