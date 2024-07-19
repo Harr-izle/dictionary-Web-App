@@ -9,8 +9,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem 1.5rem;
-    border: none;
+    border: 2px solid transparent;
+     
   }
+
+  .searchbar:focus-within{
+    border: 2px solid var(--highligth);
+    cursor: pointer;
+  }
+  
   
   .searchbar input {
     width: 70%;
