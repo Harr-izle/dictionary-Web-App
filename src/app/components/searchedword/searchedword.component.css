@@ -1,4 +1,7 @@
-
+.content{
+  width: 46.063rem;
+  margin-top:2.813rem ;
+}
 .notfound-error{
   display: flex;
   flex-direction: column;
@@ -80,24 +83,27 @@
     color: var(--headerText);  
   }
   .word-definition ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
     list-style-type: none;
-    margin-left: 1.5rem;
+    padding-left: 1rem;
+  
   }
-
-  .word-definition ul  li{
-      font-size: 1.125rem;
-      color: var(--contentText);
-      
+  
+  .word-definition ul li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-top: 1rem;
   }
-  .word-definition ul li::before{
-    content: ".";
-    color: var(--highligth);
-    font-size: 2rem;
+  
+  .word-definition ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--highligth);
+    border-radius: 50%;
   }
-
   #synonyms{
     margin-top: 2.5rem;
     display: flex;
@@ -110,6 +116,9 @@
     color: var(--headerText);
   }
   #synonyms h6{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
     font-size: 1.25rem;
     color: var(--highligth);
   }
@@ -161,3 +170,29 @@
   }
 
 
+  @media screen and (max-width: 480px){
+    .content{
+      width: 372px;
+    }
+    #searched-word h5{
+      font-size: 32px;
+    }
+    #searched-word p{
+     
+      font-size: 18px;
+    }
+
+    #searched-word svg{
+      width: 48px;
+      height: 48px;
+    }
+    .word-definition ul{
+      margin-left: 0;
+    }
+    #words{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  }

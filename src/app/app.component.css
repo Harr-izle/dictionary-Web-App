@@ -3,3 +3,11 @@
     margin-bottom: 7.75rem;
     /* background-color: red; */
 }
+@media screen and (max-width: 500px){
+    .main-container{
+        width:372px;
+        
+        
+    }
+}
+

@@ -36,7 +36,12 @@
     font-size: 1.25rem;
     font-weight: bold;
   }
-  .content{
-    width: 46.063rem;
-    margin-top:2.813rem ;
+ 
+
+  @media screen and (max-width: 480px){
+    .searchbar{
+      width: 372px;
+      
+    }
+    
   }
