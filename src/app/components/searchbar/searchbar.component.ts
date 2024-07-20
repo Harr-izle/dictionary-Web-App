@@ -3,6 +3,7 @@ import { ApiServiceService } from '../../service/api-service.service';
 import { FormsModule } from '@angular/forms';
 import { DataServiceService } from '../../service/data-service.service';
 
+
 @Component({
   selector: 'app-searchbar',
   standalone: true,
@@ -11,14 +12,17 @@ import { DataServiceService } from '../../service/data-service.service';
   styleUrl: './searchbar.component.css'
 })
 export class SearchbarComponent {
-  word: string= ''
-  constructor(private httpService:ApiServiceService,public dataService:DataServiceService) { }
+  isEmptySearch: boolean = false;
 
-  getHttp(){
-    console.log(this.word);
-    
-    this.httpService.getHttp(this.word).subscribe(results =>{
-      console.log(results);
-    }, err => console.log(err));
+  constructor(private httpService: ApiServiceService, public dataService: DataServiceService) { }
+
+  searchWord() {
+    if (!this.dataService.searchedWords || this.dataService.searchedWords.trim() === '') {
+      this.isEmptySearch = true;
+      return;
+    }
+
+    this.isEmptySearch = false;
+    this.dataService.getHttps();
   }
 }

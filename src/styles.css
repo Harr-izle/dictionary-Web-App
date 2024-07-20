@@ -20,6 +20,8 @@
     --font-tertiary:"Inconsolata", monospace;
     --dropDown:#FFFFFF;
     --shadowDropDown:0px 0px 10px rgba(0, 0, 0, 0.212);
+    --error:#FF5252;
+    --placeholderText:#CECECE;
         
 }
 
@@ -33,6 +35,7 @@
     --notfound:#757575;
     --dropDown:#3A3A3A;
     --shadowDropDown:0px 0px 10px 5px rgba(164, 69, 237, 0.5);
+    --placeholderText:#3A3A3A;
     
 }
 

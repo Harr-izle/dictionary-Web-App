@@ -32,15 +32,30 @@
 
     
   }
+  .searchbar input::placeholder{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:var(--placeholderText);
+  }
   .searchbar p{
     font-size: 1.25rem;
     font-weight: bold;
+  }
+
+  .searchbar.error {
+    border-color: var(--error);
+  }
+  
+  .error-message {
+    color:var(--error);
+    font-size: 1rem;
+    margin-top: 0.5rem;
   }
  
 
   @media screen and (max-width: 480px){
     .searchbar{
-      width: 372px;
+      width: 23.25rem;
       
     }
     

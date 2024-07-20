@@ -1,11 +1,10 @@
 .main-container{
     width:46.063rem;
     margin-bottom: 7.75rem;
-    /* background-color: red; */
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
     .main-container{
-        width:372px;
+        width:23.25rem;
         
         
     }

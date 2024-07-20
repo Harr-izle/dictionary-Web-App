@@ -42,7 +42,13 @@
       <!-- synonyms -->
        <div id="synonyms">
          <p>Synonyms</p>
-         <h6>{{meaning.synonyms}}</h6>
+         <h6>
+          @for( synonym of meaning.synonyms; track synonym){
+            <span>
+              <a href="#" (click)="fetchMeaning(synonym)">{{synonym}}</a>
+            </span>
+          }
+        </h6>
        </div>
     }
  }
