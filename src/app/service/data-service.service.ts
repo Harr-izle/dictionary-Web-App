@@ -15,6 +15,7 @@ export class DataServiceService {
   }
   searchedWords: string =""
   error: string = ""
+isLoading: any;
 
 
   constructor(private apiService: ApiServiceService) { }

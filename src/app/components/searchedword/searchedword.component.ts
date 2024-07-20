@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { DataServiceService } from '../../service/data-service.service';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-searchedword',
@@ -10,13 +9,20 @@ import { CommonModule } from '@angular/common';
   styleUrl: './searchedword.component.css'
 })
 export class SearchedwordComponent {
+  showMoreSynonyms: boolean = false;
   
  constructor(public dataService: DataServiceService){}
  
  
  fetchMeaning(synonym: string) {
-  this.dataService.searchedWords = synonym; // Update searchedWords to the clicked synonym
+  this.dataService.searchedWords = synonym; 
   this.dataService.getHttps(); 
+}
+
+
+
+toggleMoreSynonyms() {
+  this.showMoreSynonyms = !this.showMoreSynonyms;
 }
 
 }
