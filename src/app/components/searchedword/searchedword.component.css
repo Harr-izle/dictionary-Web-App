@@ -108,21 +108,23 @@
     border-radius: 50%;
   }
   #synonyms{
-    width: 23.25rem;
     margin-top: 2.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.375rem;
-    /* background-color: red; */
   }
   #synonyms p{
     font-size: 1.25rem;
     color: var(--headerText);
   }
+  #synonyms a{
+    display: inline-block;
+  }
   #synonyms h6 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.5rem;
     font-size: 1.25rem;
     color: var(--highligth);
